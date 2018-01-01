@@ -1,0 +1,175 @@
+﻿<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <TITLE>Nutrition</TITLE>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nutrition.css">
+    
+    <script type="text/javascript">
+    function dropdownTip(value){
+    console.log(value);
+        document.getElementById("result").innerHTML = value;
+    }</script>
+    </HEAD>
+    <BODY>
+        <ul class="nav">
+            <li> <a href="index.htm">Home</a></li>
+            <li>
+                <a href="#">Exercises</a>
+                <!--Drop Down Under Exercise -->
+                <ul>
+                    <li> <a href="abs/abs.htm">Abs</a>
+                    <li> <a href="back/back.htm">Back</a>
+                    <li> <a href="arms/arms.htm">Biceps</a>
+                    <li> <a href="chest/chest.htm">Chest</a>
+                    <li> <a href="arms/arms.htm">Forearms</a>
+                    <li> <a href="legs/legs.htm">Legs</a>
+                    <li> <a href="arms/arms.htm">Shoulders</a>
+                    <li> <a href="arms/arms.htm">Triceps</a>
+                </ul>
+            </li>
+
+            <!--Drop Down Under more -->
+            <li>
+                <a href="">More</a>
+                <ul>
+                    <li> <a href="calculator/calculator.htm">Calculators</a>
+                    <li> <a href="nutrition.htm">Nutrition</a>
+                    <li> <a href="supplements.htm">Supplements</a>
+                    <li> <a href="workouts.htm">Workouts</a>
+                    <li> <a href="tips.htm">Tips</a>
+                </ul>
+
+
+
+            </li>
+
+            <li> <a href="aboutus.htm">About Us</a></li>
+            <li> <a href="contact.htm">Contact</a></li>
+
+        </ul>
+
+<br/>
+<br/>
+<h3>What Diet is right for me?</h3>
+        
+<p style = "padding-left: 300px;">
+   <img src="https://www.fsis.usda.gov/wps/wcm/connect/520d8cc4-75ed-4fa3-ac6e-d2d95a969321/Food_Prep_Counter_hi.jpg?MOD=AJPERES" style="width: 700px; height: 400px"/></p>
+        
+<h1>Ketogenic Diet</h1>
+        <div class="center">
+        <p>
+            Gets your body into ketosis which means the body’s primary energy source is fats instead of sugar.
+            Results in high weight loss because more fats will be burned than normal. 70-75% calories from fat, 15-20% calories from protein and 5-10% calories from carbohydrates. Need to wait a few days to get used to this new nutrition plan and then wait a few weeks to fully enter the ketosis state to get the full effects.
+
+        </p>
+        </div>
+    
+        <div class="move5">
+            <select id="imgList">
+                <option value="https://prod-dietdoctor-d3xpwb8eqyot4ma5.stackpathdns.com/wp-content/uploads/2016/06/Keto2-1-1200x616.jpg" data-description="KETO">Keto Food Options</option>
+                <option value="https://www.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/642x361-Are_Cashews_Good_For_You.jpg" data-description="Fatty nuts and seeds such as cashews and macadamia nuts are preferred">Nuts</option>
+                <option value="https://www.organicfacts.net/wp-content/uploads/avocado.jpg" data-description="Dense in nutrients and rich in fats">Avocado</option>
+                <option value="https://morellifit.com/wp-content/uploads/2017/09/Egg-Transparent.png" data-description="Eggs are a strong source of fat and protein and are easy to prepare">Eggs</option>
+                <option value="https://hoosieragtoday.com/wp-content/uploads/2016/01/beef-steak.jpg" data-description="Ground chuck, filet mignon, porterhouse and ribeye are fat heavy cuts">Beef</option>
+                <option value="https://s.w.org/images/core/emoji/2.3/svg/1f413.svg" data-description="Thighs and legs are the important pieces">Chicken</option>
+                <option value="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/12_powerhouse_vegetables_slideshow/intro_cream_of_crop.jpg" data-description="Spinach and other greens, broccoli, asparagus, cabbage, mushrooms, bell peppers">Vegetables</option>
+                <option value="https://fortunedotcom.files.wordpress.com/2016/05/gettyimages-470972433.jpg"data-description="Bacon and Pork Rinds are basically all fat which makes them important for this diet">Bacon</option>
+                <option value="https://oukosher.org/content/uploads/2016/12/Olive-Oil-3-e1481809829298.jpg" data-description="One of the best sources of healthy fat while also adding flavor to food">Olive Oil</option>
+                <option value="https://fortmyersoliveoil.com/wp-content/uploads/2016/06/butter_2.jpg" data-description="Easily available source of fat">Salted Butter</option>
+                <option value="https://images.eatthismuch.com/site_media/img/54_erin_m_044fe97f-90c7-4dfb-aaf0-0692a73e6292.png" data-description="These dairy fats give us many options for flavoring our foods when cooking">Heavy/Sour Cream & Cream Cheese</option>
+                <option value="http://www.samuelsandsonseafood.com/site/wp-content/uploads/2016/11/GMO-Salmon.png" data-description="Many fish have a high quantity of healthy fats such as salmon, mackerel, sardines and anchovies">Fish</option>  
+            </select>
+        </div>
+
+        <img id="image" class="img" src="http://static1.squarespace.com/static/536ae170e4b0610483538ec5/t/54832c2ae4b04d71ee58f7fe/1506120469490/" height="100" width="150" style="float: left; padding-left: 20px; padding-top: 10px"/>
+        <p id="text"></p>
+        
+        <br />
+
+<script>
+    var img = document.getElementById("image");
+    var text = document.getElementById("text");
+
+    function setClass(e) {
+    var select = e.target;
+    img.src = select.options[select.selectedIndex].value;
+    text.innerHTML = select.options[select.selectedIndex].dataset.description;
+    return false;
+    }
+
+    document.getElementById("imgList").onchange = setClass;
+        </script>
+        
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>Atkins Diet</h1>
+   <div class="center">
+        <p>
+            This diet is an innovative way to lose weight, originated by Dr. Robert Atkins. Our food supply depends on high fats and protein while limiting carbs and sugar. There are four phases in this diet.
+            <br/>
+        
+       <div class="bold">• Induction: </div>
+       <div class="move">
+       For about 2 weeks keep your carb supply under 20 grams/day. Fat and protein is your main source of fuel while green vegetables should be used for carbs.</div>
+       <div class="bold">• Balancing:   </div>
+       <div class ="move2">
+           Introduce nuts, vegetables, and fruits to your diet </div>
+       <div class="bold">• Fine-Tuning:   </div>
+       <div class ="move3">
+           You should be experiencing fast weight loss so it's safe to add more carbohydrates. </div>
+        <div class="bold">• Maintenance:   </div>
+       <div class ="move4">
+           Maintain your diet with fats and protein and finally eat enough healthy carbs for energy </div>
+       </p>
+        </div>     
+
+<br/>
+<br/>
+<h1>Paleo Diet</h1>
+   <div class="center">
+        <p>
+            This diet is based around eating food that a caveman can hunt or gather. This includes meats, fish, nuts, vegetables,  and seeds. The theory behind this diet describes humans living a more sedintary lifestyle from being hunter-gatherers and our body is not used to a diet of high carbs and processed foods. It can help with weight loss since a lot of sugar, carbs, and unhealthy fats are eliminated from out diet. By eating tons of natural foods filled with meats, fruits, and vegetables, our overrall health should rise along with burning more fats for energy.
+            <br/>
+        
+       
+       </p>
+        </div>     
+ 
+ <br/>
+<br/>
+<h1>IIFYM</h1>
+   <div class="center">
+        <p>
+            If It Fits Your Macros has taken the fitness world by storm. Also known as "flexible dieting," it focuses on macronutrient intake. As long as you hit certain numbers, there's theoretically no limitation on what foods you can use to meet them. Having the freedom to eat whatever we want until we reach a limit opens up many new possibilities for eager dieters who prefer not to limit themselves on their food options. As long as we have control over out Protein, carbs, and fat intake, we can hopefully control if we want to lose weight, maintain our musculature, or bulk up. 
+            <br/>
+       
+       </p>
+        </div>        
+
+    
+<h1>Macronutrients</h1>
+<table style="width:100%">
+  <tr>
+    <td>Carbohydrate</td>
+    <td>4 calories per gram</td>
+  </tr>
+  <tr>
+    <td>Protein</td>
+    <td>4 calories per gram</td>
+  </tr>
+  <tr>
+    <td>Fat</td>
+    <td>9 calories per gram</td>
+  </tr>
+  <tr>
+    <td>Alcohol</td>
+    <td>7 calories per gram</td>
+  </tr>
+</table>
+
+
+    </BODY>
+</HTML>

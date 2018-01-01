@@ -1,0 +1,12 @@
+BODY{ 
+    background-image: url('https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/media/abs-8-pack_2.jpg');
+    background-size: 200px 50px;
+    background-repeat: no-repeat;
+    background-position: 550px 90px;
+}
+h1{
+    color: dimgray;
+    font-family: sans-serif;
+    padding-left: 700px;
+    font-size: 250%;
+}

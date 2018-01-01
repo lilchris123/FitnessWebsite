@@ -1,0 +1,183 @@
+body{
+    margin:0px;
+  	padding:0px;
+  	font-family: 'Arial',serif;
+    color:black;
+}
+
+.nav{
+    //Make Nav Bar Top layer;
+     position:relative;
+    z-index: 999;
+    background-color: skyblue;
+    color: #ffffff;
+    list-style: none;
+    font-family:Times, Serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px 0 40px 0;
+    opacity: .9;
+    
+}
+.nav >li {
+    float:left;
+    width:130px;
+    height:40px;
+    background-color:skyblue;
+    /* Do not Change Opacity */
+    opacity:.8;
+    line-height:40px;
+    text-align: center;
+    font-size:14px;
+    display: inline-block;
+    padding-right: 100px;
+    
+}
+.nav>li>a{
+    text-decoration: none;
+    color: white;
+    display:block; 
+    
+    
+}
+.nav>li a:hover:{
+   color: greenyellow;
+    
+}
+/* Do not display dropdown if not hovering*/
+.nav>li>ul>li{
+    display:none;
+}
+.nav>li>ul>li>a{
+    text-decoration:none;
+    color:white;
+}
+/* Display Dropdown on mouse-over */
+.nav>li:hover ul>li{
+    display:block;
+    font-size: 12px;
+    background-color:skyblue;
+
+}
+
+.body{
+    position: relative;
+		top: 0px;
+		left: 0px;
+}
+
+.arms:hover{
+        position:relative;
+    }
+
+    .arms:hover:after{
+        content: url("https://i.imgur.com/RijcUR4.jpg");
+        position: absolute;
+        left: 360px;
+        top: -752px;
+        pointer-events: none;
+    }
+
+.abs:hover{
+    position: relative;
+}
+.abs:hover:after{
+    content:url(https://i.imgur.com/RNYk2o7.jpg);
+    position: absolute;
+    left: 360px;
+    top: -752px;
+    pointer-events: none;
+}
+
+.chest:hover{
+    position: relative;
+}
+.chest:hover:after{
+    content:url(https://i.imgur.com/kHUysx8.jpg);
+    position: absolute;
+    left: 360px;
+    top: -752px;
+    pointer-events: none;
+}
+
+.legs:hover{
+    position: relative;
+}
+.legs:hover:after{
+    content:url(https://i.imgur.com/AcBcFMx.jpg);
+    position: absolute;
+    left: 360px;
+    top: -752px;
+    pointer-events: none;
+}
+
+.back:hover{
+    position: relative;
+}
+.back:hover:after{
+    content:url(https://i.imgur.com/iRyjPza.jpg);
+    position: absolute;
+    left: 360px;
+    top: -752px;
+    pointer-events: none;
+}
+iframe{
+    display:block;
+    margin:auto;
+}
+
+/*loader css */
+.genStyle{
+    background-color:black;
+    color:white;
+}
+
+.textClickable{
+    background: none;
+    border: none;
+}
+
+#desc{
+  background-color:gray;
+  width:400px;
+  color:white;
+  border: 3px solid white;
+  padding: 25px;
+  float:left;
+  border-radius:15px;    
+}
+.exercises{
+    list-style: none;
+    text-decoration: none;
+    /* Supports firefox*/
+    -moz-column-count: 4;
+    -moz-column-gap: 10px;
+    /* Supports Chrome/Safari */
+    -webkit-column-count: 4;
+    -webkit-column-gap: 10px;
+    /*Opera*/
+    -o-column-count: 4;
+    -o-column-gap: 10px;
+    /* Others */
+    column-count: 4;
+    column-gap: 10px;
+}
+
+#sidebar{
+     background: url(https://www.t-nation.com/system/publishing/articles/10003878/original/Burn-Until-You%27re-Big.jpg?1471896857) -70px 0px;
+    width:12%;
+    height:990px;
+    position: relative;
+}
+
+#rsidebar{
+    background: url(https://everydaylisamae.files.wordpress.com/2015/02/running.jpg) -455px;
+    width: 12%;
+    height: 990px;
+    position: relative;
+    top: -990;
+    float:right;
+}
+
+

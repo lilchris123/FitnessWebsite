@@ -1,0 +1,48 @@
+h1{
+    color: red;
+    margin-left: 20px;
+    text-decoration: underline
+}
+
+h3{
+    font-family:"Georgia";
+    font-size: 28;
+    text-align: center;
+    color:olive
+}
+.center {
+    margin: 25px;
+    width: 70%;
+}
+
+.bold{
+    font-weight: bold;
+}
+.move{
+    position: relative;
+    top:-18px;
+    left: 90px;
+}
+
+.move2{
+   position: relative;
+    top:-18px;
+    left: 94px; 
+}
+
+.move3{
+    position: relative;
+    top:-18px;
+    left: 108px; 
+}
+
+.move4{
+    position: relative;
+    top:-18px;
+    left: 117px; 
+}
+
+.move5{
+    position: relative;
+    left: 20px; 
+}

@@ -1,0 +1,141 @@
+body{
+    margin:0px;
+  	padding:0px;
+  	font-family: 'Arial',serif;
+    color:white;
+    background:url(http://michaelmyersfit.com/wp-content/uploads/2014/07/background.jpg);
+    background-size:cover;
+    width:100%;
+    overflow-x: hidden;
+    
+}
+p{
+    text-indent: 50px;
+}
+.center{
+    margin:auto;
+    width:60%;
+    padding:10px;
+    line-height:135%;
+    padding-bottom: 50px;
+}
+#supplementList{
+   
+}
+#supplementList>protein>p{
+margin:auto;
+width:60%;
+padding:10px;
+position:relative;
+    top:-200px;
+    left: 0px;
+    line-height: 135%;
+}
+#supplementlist>protein>h1{
+   position:relative;
+    text-align: center;
+    top:-200px;
+    
+}
+
+#supplementList>creatine>p{
+margin:auto;
+    width:60%;
+    padding:10px;
+    position:relative;
+    top: -200px;
+    left:0px;
+    line-height:135%;
+}
+#supplementlist>creatine>h2{
+   position:relative;
+    top:-200px;
+    text-align: center;
+    font-size: 32;
+}
+#supplementList>amino_acids>p{
+margin:auto;
+    width:60%;
+    padding:10px;
+    position:relative;
+    top: -200px;
+    left:0px;
+    line-height:135%;
+}
+#supplementlist>amino_acids>h3{
+   position:relative;
+    top:-200px;
+    text-align: center;
+    font-size: 32;
+}
+#supplementList>amino_acids>ul{
+    position:relative;
+    top:-200px;
+    left:100px;
+}
+#supplementList>multi_vitamins>p{
+margin:auto;
+    width:60%;
+    padding:10px;
+    position:relative;
+    top: -200px;
+    left:0px;
+    line-height:135%;
+}
+#supplementlist>multi_vitamins>h4{
+   position:relative;
+    top:-200px;
+    text-align: center;
+    font-size: 32;
+}
+#supplementList>fish_oil>p{
+margin:auto;
+    width:60%;
+    padding:10px;
+    position:relative;
+    top: -200px;
+    left:0px;
+    line-height:135%;
+}
+#supplementlist>fish_oil>h5{
+   position:relative;
+    top:-200px;
+    text-align: center;
+    font-size: 32;
+}
+#supplementList>fish_oil>ul{
+    position:relative;
+    top:-200px;
+    left:100px;
+}
+#supplementList>bcaa>p{
+margin:auto;
+    width:60%;
+    padding:10px;
+    position:relative;
+    top: -200px;
+    left:0px;
+    line-height:135%;
+}
+#supplementlist>bcaa>h6{
+   position:relative;
+    top:-200px;
+    text-align: center;
+    font-size: 32;
+}
+#supplementList>pre_workout>p{
+margin:auto;
+    width:60%;
+    padding:10px;
+    position:relative;
+    top: -200px;
+    left:0px;
+    line-height:135%;
+}
+#supplementlist>pre_workout>h7{
+   position:relative;
+    top:-200px;
+    left:500px;
+    text-align: center;
+    font-size: 32;
+}

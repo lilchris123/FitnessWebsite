@@ -1,0 +1,36 @@
+
+
+div>h1{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: teal;
+    padding-bottom: 100px;
+}
+div>ul>li {
+    margin: auto;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 130%;
+}
+div>ul{
+    list-style: none;
+}
+/* Decoration for each list Title */
+li>header{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: black;
+    font-size: 175%;
+    font-weight: bold;
+}
+/* Centers All List Elements */
+ul{
+    position: relative;
+    text-indent: 50px;
+    text-align: center;
+    padding-left: 0px;
+}

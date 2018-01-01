@@ -1,0 +1,19 @@
+h3{
+    text-align:center;
+    font-size: 38;
+    color:tomato;
+    padding-left: 50px;
+}
+.WorkoutList{
+    text-align: center;
+    list-style: none;
+}
+.WorkoutList>li>header{
+    color:darkgreen;
+    font-size: 46;
+}
+.WorkoutList>li>p{
+    font-size: 24;
+    
+}
+

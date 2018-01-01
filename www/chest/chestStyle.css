@@ -1,0 +1,12 @@
+BODY{ 
+    background-image: url('https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/chest%20muscle_1.jpg?itok=BwZXj0fP&timestamp=1402590261');
+    background-size: 120px 60px;
+    background-repeat: no-repeat;
+    background-position: 550px 90px;
+}
+h1{
+    color: dimgray;
+    font-family: sans-serif;
+    padding-left: 700px;
+    font-size: 250%;
+}

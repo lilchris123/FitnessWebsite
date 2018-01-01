@@ -1,0 +1,86 @@
+#container{
+    padding:0;
+    margin:0;
+    border:0;
+    text-align: center;
+}
+#picture1{
+    overflow: hidden;
+    height:auto;
+    width:100%;
+    
+}
+#picture1>img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;   
+}
+header{
+    height:100px;
+    background:black;
+    width:100%;
+    z-index:10;
+    position:fixed;
+}
+header>h1{
+    color:White;
+    font-family: serif;
+    position:relative;
+    top: -450px;
+}
+
+#banner{
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    width:100%;
+    height:900px;
+    position:fixed;
+    top:100px; 
+    
+}
+#banner>h2{
+    /* The Best Fitness Website in Town*/
+    left: 0;
+    line-height: 200px;
+    color:white;
+    font-size:96;
+    text-shadow: -2px 0 black, 1px 0 black, 0 -2px black;
+    margin: auto;
+    margin-top: -250px;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    
+}
+#banner>h3{
+    /* The Best Fitness Website in Town*/
+    font-family: Open Sans;
+    font-style: italic;
+	font-weight: 300;
+	line-height: 1.8;
+    left: 0;
+    line-height: 150px;
+    color:white;
+    font-size:35;
+    text-shadow: 1px 0px black, 0px 3px black, 0px 0px black;
+    margin: auto;
+    margin-top: -250px;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    
+}
+#content{
+    
+    width:100%;
+    position:relative;
+    top:1000px;
+    background:white;
+    height:1500px;
+}
+
+h1{
+    position: absolute;
+    bottom: 1050px;
+    padding-left: 500px;
+}
