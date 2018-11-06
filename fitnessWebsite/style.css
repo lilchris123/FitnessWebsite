@@ -6,7 +6,7 @@ body{
 }
 
 .nav{
-    //Make Nav Bar Top layer;
+    /*Make Nav Bar Top layer;*/
      position:relative;
     z-index: 999;
     background-color: skyblue;
@@ -41,7 +41,7 @@ body{
     
     
 }
-.nav>li a:hover:{
+.nav>li a:hover{
    color: greenyellow;
     
 }
@@ -72,7 +72,7 @@ body{
     }
 
     .arms:hover:after{
-        content: url("https://i.imgur.com/RijcUR4.jpg");
+        content: url(/images/arms.jpg);
         position: absolute;
         left: 360px;
         top: -752px;
@@ -83,7 +83,7 @@ body{
     position: relative;
 }
 .abs:hover:after{
-    content:url(https://i.imgur.com/RNYk2o7.jpg);
+    content:url(/images/abs.jpg);
     position: absolute;
     left: 360px;
     top: -752px;
@@ -94,7 +94,7 @@ body{
     position: relative;
 }
 .chest:hover:after{
-    content:url(https://i.imgur.com/kHUysx8.jpg);
+    content:url(/images/chest.jpg);
     position: absolute;
     left: 360px;
     top: -752px;
@@ -105,7 +105,7 @@ body{
     position: relative;
 }
 .legs:hover:after{
-    content:url(https://i.imgur.com/AcBcFMx.jpg);
+    content:url(/images/legs.jpg);
     position: absolute;
     left: 360px;
     top: -752px;
@@ -116,7 +116,7 @@ body{
     position: relative;
 }
 .back:hover:after{
-    content:url(https://i.imgur.com/iRyjPza.jpg);
+    content:url(/images/back.jpg);
     position: absolute;
     left: 360px;
     top: -752px;
@@ -165,14 +165,14 @@ iframe{
 }
 
 #sidebar{
-     background: url(https://www.t-nation.com/system/publishing/articles/10003878/original/Burn-Until-You%27re-Big.jpg?1471896857) -70px 0px;
+     background: url(/images/Burn.jpg) -70px 0px;
     width:12%;
     height:990px;
     position: relative;
 }
 
 #rsidebar{
-    background: url(https://everydaylisamae.files.wordpress.com/2015/02/running.jpg) -455px;
+    background: url(/images/running.jpg) -455px;
     width: 12%;
     height: 990px;
     position: relative;

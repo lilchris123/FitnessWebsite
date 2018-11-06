@@ -52,7 +52,7 @@ function exerciseLoader(data){
     
     
 }
-$.getJSON("back.json",function(data){
+$.getJSON("/api/database/back",function(data){
 
     exerciseList(data);
     exerciseLoader(data);

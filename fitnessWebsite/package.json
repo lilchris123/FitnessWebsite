@@ -1,0 +1,22 @@
+{
+  "name": "fitnesswebsite",
+  "version": "1.0.0",
+  "description": "fitness Website",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "joi": "^14.0.3",
+    "nodemon": "^1.18.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "fitness",
+    "web"
+  ],
+  "author": "Chris Mayol",
+  "license": "ISC"
+}

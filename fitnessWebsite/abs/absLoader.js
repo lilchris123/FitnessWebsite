@@ -54,7 +54,7 @@ function exerciseLoader(data){
     
     
 }
-$.getJSON("abs.json",function(data){
+$.getJSON("/api/database/abs",function(data){
 
     exerciseList(data);
     exerciseLoader(data);

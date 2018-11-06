@@ -53,7 +53,7 @@ function exerciseLoader(data){
     
     
 }
-$.getJSON("legs.json",function(data){
+$.getJSON("/api/database/legs",function(data){
 
     exerciseList(data);
     exerciseLoader(data);

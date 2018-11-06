@@ -56,7 +56,7 @@ function exerciseLoader(data){
     
 }
 
-$.getJSON("chest.json",function(data){
+$.getJSON("/api/database/chest",function(data){
 
     exerciseList(data);
     exerciseLoader(data);
