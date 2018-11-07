@@ -8,18 +8,24 @@ const backExercises= require("./database/back.json");
 const legExercises= require("./database/legs.json");
 
 app.use(express.json());
+//routing for static files
 app.use('/images',express.static('images'));
 app.use('/styles',express.static('styles'));
 app.use('/Loaders',express.static('Loaders'));
 
+//routing to webpage
 app.get('/',(req,res) =>{
     res.sendFile(path.join(__dirname+'/index.htm'));
     console.log("request was made: "+ req.url);
 });
+
+//routing to home 
 app.get('/home',(req,res) =>{
     res.sendFile(path.join(__dirname+'/index.htm'));
     console.log("request was made: "+ req.url);
 });
+
+//routing to pages and workout pages
 app.get('/:page',(req,res) =>{
     if(req.params.page==='aboutus'||
     req.params.page==='nutrition'||
@@ -43,6 +49,7 @@ app.get('/:page',(req,res) =>{
     
 });
 
+//Routing to api respond with bodyExercises list
 app.get('/api/database/:body',(req,res) =>{
     if(req.params.body==='arms'){
         res.json(armExercises);
@@ -66,6 +73,7 @@ app.get('/api/database/:body',(req,res) =>{
     }
 });
 
+//Set and listen on enviroment port or port 3000 and log data
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
 
