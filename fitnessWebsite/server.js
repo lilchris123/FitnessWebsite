@@ -1,11 +1,32 @@
 const express = require('express');
+const mongoose =require("mongoose");
 const app     = express();
 const path    = require("path");
-const armExercises= require("./database/arms.json");
-const absExercises= require("./database/abs.json");
-const chestExercises= require("./database/chest.json");
-const backExercises= require("./database/back.json");
-const legExercises= require("./database/legs.json");
+
+//connect to mongodb
+mongoose.connect("mongodb://chris:test123@ds157383.mlab.com:57383/fitness_exercises");
+
+//Create schema
+const exersiceSchema= new mongoose.Schema(
+{
+    _id: {
+        oid: String
+    },
+    Body: [{
+    Exercise: String,
+    Descriptions: String,
+    Secondary: String,
+    link: String,
+    }]
+}
+);
+
+//get model/collection from mongodb
+const absModel= mongoose.model('abs',exersiceSchema);
+const armsModel= mongoose.model('arms',exersiceSchema);
+const chestModel= mongoose.model('chest',exersiceSchema);
+const backModel= mongoose.model('back',exersiceSchema);
+const legsModel= mongoose.model('legs',exersiceSchema);
 
 app.use(express.json());
 //routing for static files
@@ -52,24 +73,43 @@ app.get('/:page',(req,res) =>{
 //Routing to api respond with bodyExercises list
 app.get('/api/database/:body',(req,res) =>{
     if(req.params.body==='arms'){
-        res.json(armExercises);
-        console.log("Api");
+        armsModel.find({},'-_id', (err,data) =>{
+            if(err) throw err;
+            res.json(data[0]);
+            console.log("fetched data from mongodb!");
+        });
     }
     else if(req.params.body==='abs'){
-        res.json(absExercises);
-        console.log("Api");
+        absModel.find({},'-_id', (err,data) =>{
+            if(err) throw err;
+            res.json(data[0]);
+            console.log("fetched data from mongodb!");
+        });
     }
     else if(req.params.body==='chest'){
-        res.json(chestExercises);
-        console.log("Api");
+        chestModel.find({},'-_id', (err,data) =>{
+            if(err) throw err;
+            res.json(data[0]);
+            console.log("fetched data from mongodb!");
+        });
     }
     else if(req.params.body==='back'){
-        res.json(backExercises);
-        console.log("Api");
+        backModel.find({},'-_id', (err,data) =>{
+            if(err) throw err;
+            res.json(data[0]);
+            console.log("fetched data from mongodb!");
+        });
     }
     else if(req.params.body==='legs'){
-        res.json(legExercises);
-        console.log("Api");
+        legsModel.find({},'-_id', (err,data) =>{
+            if(err) throw err;
+            res.json(data[0]);
+            console.log("fetched data from mongodb!");
+        });
+    }
+    else{
+        res.sendStatus(404);
+        console.log("Not Found");
     }
 });
 
