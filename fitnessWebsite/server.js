@@ -5,7 +5,7 @@ const path    = require("path");
 
 //connect to mongodb
 mongoose.connect("mongodb://chris:test123@ds157383.mlab.com:57383/fitness_exercises");
-
+console.log("Connected to MongoDB");
 //Create schema
 const exersiceSchema= new mongoose.Schema(
 {
