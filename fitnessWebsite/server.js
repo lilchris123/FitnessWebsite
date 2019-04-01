@@ -4,7 +4,9 @@ const app     = express();
 const path    = require("path");
 
 //connect to mongodb
-mongoose.connect("mongodb://chris:test123@ds157383.mlab.com:57383/fitness_exercises");
+mongoose.connect("mongodb://chris:test123@ds157383.mlab.com:57383/fitness_exercises",{ useNewUrlParser: true })
+.then(() => console.log("Connected to DB"))
+.catch(err => console.log(err));
 console.log("Connected to MongoDB");
 //Create schema
 const exersiceSchema= new mongoose.Schema(

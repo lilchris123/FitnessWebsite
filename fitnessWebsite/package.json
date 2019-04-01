@@ -6,8 +6,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "joi": "^14.0.3",
-    "mongoose": "^5.3.10",
-    "nodemon": "^1.18.5"
+    "mongoose": "^5.4.20",
+    "nodemon": "^1.18.10"
   },
   "devDependencies": {},
   "scripts": {
