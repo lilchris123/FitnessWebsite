@@ -1,4 +1,4 @@
-# fitness-website
+# FitnessWebsite
 FitnessWebsite
 
 A full stacked website implementing html,css,javascript for the frontend and nodejs, expressjs and mongodb for the backend.
